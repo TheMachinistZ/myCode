@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showme (){
+            document.getElementById("textMsg").value="hello";
+        }
+        function setAndroidText() {
+            var geValue = document.getElementById("textMsg").value;
+            window.abc.SetText(geValue);
+        }
+        function openActivity() {
+           window.cde.openActivity();
+        }
+    </script>
+</head>
+<body>
+this is index page;
+
+<h3>
+    this is title
+</h3>
+<input type="text" id="textMsg"/>
+<input type="button" value="click me" onclick="openActivity()" />
+</body>
+</html>
